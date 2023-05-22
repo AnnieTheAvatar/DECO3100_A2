@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Milky;
+    src: url(fonts/Milky.ttf);
+}
+
+@font-face {
+    font-family: Coolvetica;
+    src: url(fonts/coolvetica\ rg.otf);
+}
+
+body {
+    background-color: rgb(232, 246, 248);
+}
+
+header {
+    background-color: rgb(13, 36, 98);
+    padding: 50px;
+}
+
+h1 {
+    font-family: 'Milky', sans-serif;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Milky', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    color: rgb(13, 36, 98);
+}
+
+section {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div {
+    margin: 20px;
+    height: 500px;
+}
+
+p {
+    width: 40%;
+    margin: 20px;
+    font-size: 25px;
+    font-family: 'Coolvetica', Helvetica, sans-serif;
+}
+
+img {
+    width: 300px;
+}
