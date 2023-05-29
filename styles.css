@@ -15,16 +15,37 @@ body {
     background-image: linear-gradient(rgb(127, 176, 241), rgb(232, 246, 248));
 }
 
+main {
+    margin: 400px 50px 20px 50px;
+}
+
 header, footer {
-    background-color: rgb(13, 36, 98);
-    background-image: linear-gradient(rgb(13, 36, 98), rgb(51, 104, 184));
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(129, 155, 230), rgb(255, 255, 255));
     padding: 70px;
+}
+
+.drip {
+    position: absolute;
+    top: 215px;
+    left: 0px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1779px) {
+    .drip {
+        top: 299px;
+    }
+
+    main {
+        margin-top: 300px;
+    }
 }
 
 h1 {
     font-family: 'Milky', sans-serif;
     font-size: 80px;
-    color: white;
+    color: rgb(13, 36, 98);
     text-align: center;
 }
 
@@ -32,7 +53,7 @@ h2 {
     font-family: 'Milky', sans-serif;
     font-size: 40px;
     text-align: center;
-    margin: 20px;
+    margin: 30px;
     color: rgb(13, 36, 98);
 }
 
@@ -40,6 +61,7 @@ h3 {
     font-family: 'Milky', sans-serif;
     font-size: 30px;
     color: rgb(13, 36, 98);
+    text-align: center;
 }
 
 aside {
@@ -56,16 +78,36 @@ aside p, aside h3, aside img {
     text-align: center;
 }
 
-section, aside, .intro {
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.hidden {
+    display: none;
 }
 
-div {
+section, aside, .intro {
+    margin: 10px;
+}
+
+.card {
+    padding: 30px 10px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left, right";
+}
+
+.left {
+    grid-area: "left";
+}
+
+.right {
+    grid-area: "right";
+}
+
+.graph {
     margin: 20px;
     height: 500px;
+    width: 600px;
 }
 
 p {
@@ -74,12 +116,18 @@ p {
     margin: 20px;
 }
 
-section p {
-    width: 40%;
+.nuts {
+    width: 300px;
 }
 
-img {
-    width: 300px;
+.milk-type-containers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.milk-type-containers h3 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 footer{

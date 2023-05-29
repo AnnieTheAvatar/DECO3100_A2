@@ -15,35 +15,57 @@
 
     <header>
         <h1>Is cow's milk the right choice for your child's future?</h1>
+        <img src="/assets/Drip.svg" class="drip">
     </header>
     <main>
-        <!--<section class="intro"> -->
-            <h2>Why Milk?</h2>
-            <p>Milk is one of the most common resources. Over 6 billion people consume milk worldwide! One glass of milk (250ml) is equivalent to 3.8km of driving a car! Milk is one of the main sources of nutrients for growing children, so we should be making sure the milk we're feeding the future generations won't continue to polute the Earth.</p>
-        <!--</section>-->
+        <section class="intro">
+        <h2>Why Milk?</h2>
+        <p>Milk is one of the most common resources. Over 6 billion people consume milk worldwide! One glass of milk
+            (250ml) is equivalent to 3.8km of driving a car! Milk is one of the main sources of nutrients for growing
+            children, so we should be making sure the milk we're feeding the future generations won't continue to polute
+            the Earth.</p>
+        </section>
 
-        <aside>
+        <aside class="hidden">
             <h3>Meet Milky!</h3>
             <img src="assets/milky_norm.png" alt="cartoon drawing of a milk carton with a friendly smile">
-            <p>Milky is a passionate milk carton that wants to teach everyone about the impact cow's milk can have on the Environment. Milky is here to guide you through the data below! </p>
+            <p>Milky is a passionate milk carton that wants to teach everyone about the impact cow's milk can have on
+                the Environment. Milky is here to guide you through the data below! </p>
         </aside>
 
         <h2>What's the damage?</h2>
-        <section>
-            <div id="waterBar"></div>
-            <p>Some info about water blah blah</p>
-            <p>Some info about land blah blah</p>
-            <div id="landBar"></div>
-            <aside>
-                <h3>Milkys Note:</h3>
-                <img src="assets/milky_point.png">
-                <p>Dairy milk uses the most water and land per litre of milk. If we all switched to plant based alternatives we could use the land in better ways! <a href="https://landcareaustralia.org.au/about/what-you-can-do-at-home-or-work-to-get-involved-in-landcare/">Read about how you can help the land here.<a></a></p>
-            </aside>
+        <!-- <section> -->
+        <section class="card">
+            <div class="left">
+                <div id="waterBar" class="graph"></div>
+            </div>
+            <div class="right">
+                <h3>Water Usage</h3>
+                <p>Some info about water blah blah</p>
+            </div>
         </section>
+        <section class="card">
+            <div class="left">
+                <h3>Land Usage</h3>
+                <p>Some info about land blah blah</p>
+            </div>
+            <div class="right">
+                <div id="landBar"></div>
+            </div>
+        </section>
+        <aside class="hidden">
+            <h3>Milkys Note:</h3>
+            <img src="assets/milky_point.png">
+            <p>Dairy milk uses the most water and land per litre of milk. If we all switched to plant based
+                alternatives we could use the land in better ways! <a
+                    href="https://landcareaustralia.org.au/about/what-you-can-do-at-home-or-work-to-get-involved-in-landcare/">Read
+                    about how you can help the land here.<a></a></p>
+        </aside>
+        <!-- </section> -->
 
         <h2>Do alternative milks even work?</h2>
         <section>
-            <div id="milkType"></div>
+            <div id="milkType" class="graph"></div>
         </section>
 
         <h2>What's the cost?</h2>
@@ -53,30 +75,34 @@
 
         <h2>What alternaitve milk will you choose?</h2>
         <p style="width: 100%; text-align: center;">Click on an image below to find out more about each milk type</p>
-        <section>
+
+        <section class="milk-type-containers">
             <section>
-            <h3>Oat Milk</h3>
-            <a href="https://www.oatly.com/en-au/stuff-we-make/oat-milk/oat-milk"><img src="assets/oat.png"></a>
-        </section>
-        <section>
-            <h3>Soy Milk</h3>
-            <a href="https://soy.com.au/product/soy-milk-original/"><img src="assets/soy.png"></a>
-        </section>
-        <section>
-            <h3>Almond Milk</h3>
-            <a href="https://australiasownfoods.com.au/product/almond-milk-original/"><img src="assets/almonds.png"></a>
-        </section>
+                <h3>Oat Milk</h3>
+                <a href="https://www.oatly.com/en-au/stuff-we-make/oat-milk/oat-milk"><img src="assets/oat.png"
+                        class="nuts" alt="transparent image of a pile of oats"></a>
+            </section>
+            <section>
+                <h3>Soy Milk</h3>
+                <a href="https://soy.com.au/product/soy-milk-original/"><img src="assets/soy.png" class="nuts"
+                        alt="transparent image of a pile of soys"></a>
+            </section>
+            <section>
+                <h3>Almond Milk</h3>
+                <a href="https://australiasownfoods.com.au/product/almond-milk-original/"><img src="assets/almonds.png"
+                        class="nuts" alt="transparent image of a pile of almonds"></a>
+            </section>
         </section>
 
-        <footer class="references">
-            <h4>References</h3>
-            <ul>
-            <li><a>Link 1</a></li>
-            <li><a>Link 2</a></li>
-            </ul>
-        </footer>
+
     </main>
-
+    <footer class="references">
+        <h4>References</h3>
+            <ul>
+                <li><a>Link 1</a></li>
+                <li><a>Link 2</a></li>
+            </ul>
+    </footer>
     <script src="script.js"></script>
 </body>
 

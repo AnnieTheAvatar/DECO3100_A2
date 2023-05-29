@@ -62,7 +62,6 @@ Plotly.d3.csv("data/environmental-footprint-milks.csv", footprintData => {
         },
         hovermode: 'closest',
         width: '500px'
-
     }
 
     //plot the bar chart with the pop
