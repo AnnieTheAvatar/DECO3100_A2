@@ -68,3 +68,21 @@ Plotly.d3.csv("data/environmental-footprint-milks.csv", footprintData => {
     Plotly.newPlot('landBar', land_data, land_layout);
 
 });
+
+const first_milky = document.getElementById('milky_first');
+const milky_button1 = document.getElementById('milky_first_button');
+const hide_button1 = document.getElementById('hide_btn_1');
+
+function showMilky1() {
+    first_milky.classList.remove("hidden");
+}
+
+function hideMilky1() {
+    first_milky.classList.add("hidden");
+}
+
+console.log(hide_button1)
+// Attach event listeners
+milky_button1.addEventListener("click", showMilky1);
+hide_button1.addEventListener("click", hideMilky1);
+

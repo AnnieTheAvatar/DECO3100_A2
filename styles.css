@@ -66,16 +66,24 @@ h3 {
 
 aside {
     width: 50%; 
-    height: 500px;
+    /*height: 400px;*/
     background-color: aliceblue;
-    border-radius: 50%;
+    border-radius: 50px;
     padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left, right";
 }
 
 aside p, aside h3, aside img {
-    width: 40%;
+    /*width: 40%;*/
     margin: 0;
     text-align: center;
+}
+
+span img {
+    height: 50px;
+    margin: 0px;
 }
 
 .hidden {
@@ -91,6 +99,12 @@ section, aside, .intro {
     border-radius: 20px;
     background-color: aliceblue;
     margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left, right";
+}
+
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "left, right";

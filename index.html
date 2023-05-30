@@ -8,6 +8,7 @@
     <link href="reset.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/65bb8ed4ef.js" crossorigin="anonymous"></script>
     <title>Milk Machine</title>
 </head>
 
@@ -19,49 +20,77 @@
     </header>
     <main>
         <section class="intro">
-        <h2>Why Milk?</h2>
-        <p>Milk is one of the most common resources. Over 6 billion people consume milk worldwide! One glass of milk
-            (250ml) is equivalent to 3.8km of driving a car! Milk is one of the main sources of nutrients for growing
-            children, so we should be making sure the milk we're feeding the future generations won't continue to polute
-            the Earth.</p>
+            <h2>Why Milk?</h2>
+            <p>Milk is one of the most common resources. Over 6 billion people consume milk worldwide! One glass of
+                milk
+                (250ml) is equivalent to 3.8km of driving a car! Milk is one of the main sources of nutrients for
+                growing
+                children, so we should be making sure the milk we're feeding the future generations won't continue
+                to polute
+                the Earth.<a id="milky_first_button"href="#"><i
+                    class="fa-solid fa-cow" ></i></a> <- click me!</p>
         </section>
 
-        <aside class="hidden">
-            <h3>Meet Milky!</h3>
-            <img src="assets/milky_norm.png" alt="cartoon drawing of a milk carton with a friendly smile">
-            <p>Milky is a passionate milk carton that wants to teach everyone about the impact cow's milk can have on
-                the Environment. Milky is here to guide you through the data below! </p>
+        <aside id="milky_first" class="hidden">
+            <section class="left">
+                <h3>Meet Milky!</h3>
+                <img src="assets/milky_norm.png" alt="cartoon drawing of a milk carton with a friendly smile">
+            </section>
+            <section class="right">
+                <a href="#"><i id="hide_btn_1" class="fa-solid fa-circle-xmark"></i></a>
+                <p>Milky is a passionate milk carton that wants to teach everyone about the impact
+                    cow's milk can have on
+                    the Environment. Milky is here to guide you through the data below! When you see a Milky icon <i
+                        class="fa-solid fa-cow"></i> click on it to read what Milky has to say!</p>
+            </section>
         </aside>
 
+        </section>
         <h2>What's the damage?</h2>
-        <!-- <section> -->
         <section class="card">
             <div class="left">
                 <div id="waterBar" class="graph"></div>
             </div>
             <div class="right">
                 <h3>Water Usage</h3>
-                <p>Some info about water blah blah</p>
+                <p>Did you know that producing dairy milk requires a lot of water? Cows, just like us, need water to
+                    stay healthy and produce milk. They also need water for their metabolic functions. On top of that,
+                    the crops that cows eat, like grass and grains, also need water to grow. All this water adds up and
+                    can put a strain on our water resources, especially in areas where water is already scarce. So, it's
+                    important for us to be mindful of how much water goes into producing milk.</p>
             </div>
         </section>
         <section class="card">
             <div class="left">
                 <h3>Land Usage</h3>
-                <p>Some info about land blah blah</p>
+                <p>Another thing to think about is the amount of land needed for milk production. Cows need space to
+                    graze and eat grass, and that requires large pastures. Sometimes, forests and other natural habitats
+                    are cleared to make room for these pastures. This can harm the environment by contributing to
+                    deforestation and the loss of animal homes. Additionally, cows also eat crops like corn and wheat,
+                    which require land for cultivation. When more land is used for growing cow food, it can lead to more
+                    deforestation and the loss of biodiversity.</p>
             </div>
             <div class="right">
                 <div id="landBar"></div>
             </div>
         </section>
+
+
         <aside class="hidden">
-            <h3>Milkys Note:</h3>
-            <img src="assets/milky_point.png">
-            <p>Dairy milk uses the most water and land per litre of milk. If we all switched to plant based
-                alternatives we could use the land in better ways! <a
-                    href="https://landcareaustralia.org.au/about/what-you-can-do-at-home-or-work-to-get-involved-in-landcare/">Read
-                    about how you can help the land here.<a></a></p>
+            <section class="left">
+                <h3>Milkys Note:</h3>
+                <img src="assets/milky_point.png">
+            </section>
+            <section class="right">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <p>As you can see, the way we produce milk can have a big impact on our environment. We
+                    can also choose milk alternatives, which have a smaller environmental footprint.
+                    There are other things we can do to help the environment too! <a
+                        href="https://landcareaustralia.org.au/about/what-you-can-do-at-home-or-work-to-get-involved-in-landcare/">Read
+                        about how you can help the land here.</a></p>
+            </section>
         </aside>
-        <!-- </section> -->
+
 
         <h2>Do alternative milks even work?</h2>
         <section>
@@ -73,7 +102,7 @@
 
         </section>
 
-        <h2>What alternaitve milk will you choose?</h2>
+        <h2>What alternative milk will you choose?</h2>
         <p style="width: 100%; text-align: center;">Click on an image below to find out more about each milk type</p>
 
         <section class="milk-type-containers">
@@ -93,8 +122,6 @@
                         class="nuts" alt="transparent image of a pile of almonds"></a>
             </section>
         </section>
-
-
     </main>
     <footer class="references">
         <h4>References</h3>
