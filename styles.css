@@ -1,4 +1,5 @@
 /*Importing the fonts I'm going to use*/
+
 @font-face {
     font-family: Milky;
     src: url(fonts/Milky.ttf);
@@ -9,7 +10,9 @@
     src: url(fonts/coolvetica\ rg.otf);
 }
 
+
 /*basic layout styling*/
+
 body {
     background-color: rgb(232, 246, 248);
     background-image: linear-gradient(rgb(127, 176, 241), rgb(232, 246, 248));
@@ -19,7 +22,8 @@ main {
     margin: 400px 50px 20px 50px;
 }
 
-header, footer {
+header,
+footer {
     background-color: rgb(255, 255, 255);
     background-image: linear-gradient(rgb(129, 155, 230), rgb(255, 255, 255));
     padding: 70px;
@@ -36,7 +40,6 @@ header, footer {
     .drip {
         top: 299px;
     }
-
     main {
         margin-top: 300px;
     }
@@ -65,17 +68,22 @@ h3 {
 }
 
 aside {
-    width: 50%; 
+    width: 50%;
     /*height: 400px;*/
     background-color: aliceblue;
     border-radius: 50px;
     padding: 30px;
     display: grid;
+    /*position: absolute;*/
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "left, right";
+    margin: auto;
+    box-shadow: 10px 10px lightblue;
 }
 
-aside p, aside h3, aside img {
+aside p,
+aside h3,
+aside img {
     /*width: 40%;*/
     margin: 0;
     text-align: center;
@@ -90,7 +98,9 @@ span img {
     display: none;
 }
 
-section, aside, .intro {
+section,
+aside,
+.intro {
     margin: 10px;
 }
 
@@ -144,7 +154,7 @@ p {
     margin-bottom: 10px;
 }
 
-footer{
+footer {
     display: block;
 }
 
@@ -154,7 +164,45 @@ h4 {
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 footer li {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 5px;
+}
+
+button {
+    font-size: 20px;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+button:hover {
+    font-size: 25px;
+    background-color: rgb(13, 36, 98);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.close {
+    float: right;
+}
+
+a {
+    color: rgb(129, 155, 230);
+}
+
+img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+h5 {
+    font-family: 'Coolvetica', Helvetica, sans-serif;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(170, 217, 217);
+    width: 50%;
+    margin: 20px;
 }

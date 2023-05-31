@@ -72,6 +72,7 @@ Plotly.d3.csv("data/environmental-footprint-milks.csv", footprintData => {
 const first_milky = document.getElementById('milky_first');
 const milky_button1 = document.getElementById('milky_first_button');
 const hide_button1 = document.getElementById('hide_btn_1');
+const main = document.getElementById("body");
 
 function showMilky1() {
     first_milky.classList.remove("hidden");
@@ -82,7 +83,25 @@ function hideMilky1() {
 }
 
 console.log(hide_button1)
-// Attach event listeners
+    // Attach event listeners
 milky_button1.addEventListener("click", showMilky1);
 hide_button1.addEventListener("click", hideMilky1);
 
+
+const second_milky = document.getElementById('milky_second');
+const milky_button2 = document.getElementById('milky_second_button');
+const hide_button2 = document.getElementById('hide_btn_2');
+
+function showMilky2() {
+    second_milky.classList.remove("hidden");
+
+}
+
+function hideMilky2() {
+    second_milky.classList.add("hidden");
+}
+
+console.log(hide_button2)
+    // Attach event listeners
+milky_button2.addEventListener("click", showMilky2);
+hide_button2.addEventListener("click", hideMilky2);
