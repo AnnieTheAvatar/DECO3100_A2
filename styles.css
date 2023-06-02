@@ -11,22 +11,33 @@
 }
 
 
+:root {
+    --honeydew: #EDFFEC;
+    --lapis: #28587B;
+    --violet: #5B2E48;
+    --periwinkle: #AFB7ED;
+    --jordy: #82B9F5;
+}
+
 /*basic layout styling*/
 
 body {
-    background-color: rgb(232, 246, 248);
-    background-image: linear-gradient(rgb(127, 176, 241), rgb(232, 246, 248));
+    background-color: var(--jordy);
 }
 
 main {
     margin: 400px 50px 20px 50px;
 }
 
-header,
-footer {
-    background-color: rgb(255, 255, 255);
-    background-image: linear-gradient(rgb(129, 155, 230), rgb(255, 255, 255));
+header{
+    background-color: white;
+    background-image: linear-gradient(var(--jordy), white);
     padding: 70px;
+}
+
+footer {
+    padding: 70px;
+    background-color: var(--honeydew);
 }
 
 .drip {
@@ -48,7 +59,7 @@ footer {
 h1 {
     font-family: 'Milky', sans-serif;
     font-size: 80px;
-    color: rgb(13, 36, 98);
+    color: var(--lapis);
     text-align: center;
 }
 
@@ -57,13 +68,13 @@ h2 {
     font-size: 40px;
     text-align: center;
     margin: 30px;
-    color: rgb(13, 36, 98);
+    color: var(--lapis);
 }
 
 h3 {
     font-family: 'Milky', sans-serif;
     font-size: 30px;
-    color: rgb(13, 36, 98);
+    color: var(--lapis);
     text-align: center;
 }
 
@@ -74,11 +85,13 @@ aside {
     border-radius: 50px;
     padding: 30px;
     display: grid;
-    /*position: absolute;*/
+    position: relative;
+    top: 20%;
+    left: 20%;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "left, right";
     margin: auto;
-    box-shadow: 10px 10px lightblue;
+    box-shadow: 10px 10px var(--honeydew);
 }
 
 aside p,
@@ -131,7 +144,7 @@ aside,
 .graph {
     margin: 20px;
     height: 500px;
-    width: 600px;
+    width: 50%;
 }
 
 p {
@@ -160,7 +173,7 @@ footer {
 
 h4 {
     font-family: 'Milky', Arial, Helvetica, sans-serif;
-    color: white;
+    color: var(--lapis);
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -179,7 +192,7 @@ button {
 
 button:hover {
     font-size: 25px;
-    background-color: rgb(13, 36, 98);
+    background-color: var(--lapis);
     color: aliceblue;
     cursor: pointer;
 }
@@ -202,7 +215,17 @@ h5 {
     font-size: 30px;
     border-radius: 20px;
     padding: 20px;
-    background-color: rgb(170, 217, 217);
+    background-color: var(--honeydew);
     width: 50%;
-    margin: 20px;
+    text-align: center;
+    margin: 20px auto;
+    color: var(--lapis);
+}
+
+.blackout {
+    opacity: 0.5;
+}
+
+strong {
+    color: var(--violet);
 }
