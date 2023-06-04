@@ -127,10 +127,11 @@ Plotly.d3.csv("data/environmental-footprint-milks.csv", footprintData => {
 
 });
 
+//first milky aside button functions
 const first_milky = document.getElementById('milky_first');
 const milky_button1 = document.getElementById('milky_first_button');
 const hide_button1 = document.getElementById('hide_btn_1');
-const main = document.getElementById("all");
+//const main = document.getElementById("all");
 
 function showMilky1() {
     first_milky.classList.remove("hidden");
@@ -147,7 +148,7 @@ console.log(hide_button1)
 milky_button1.addEventListener("click", showMilky1);
 hide_button1.addEventListener("click", hideMilky1);
 
-
+//2nd milky aside button functions
 const second_milky = document.getElementById('milky_second');
 const milky_button2 = document.getElementById('milky_second_button');
 const hide_button2 = document.getElementById('hide_btn_2');
@@ -166,3 +167,21 @@ console.log(hide_button2)
     // Attach event listeners
 milky_button2.addEventListener("click", showMilky2);
 hide_button2.addEventListener("click", hideMilky2);
+
+//3rd milky aside button functions
+const milky_third = document.getElementById('milky_third');
+const milky_button3 = document.getElementById('milky_second_third');
+const hide_button3 = document.getElementById('hide_btn_3');
+
+function showMilky3() {
+    milky_third.classList.remove("hidden");
+    //main.classList.add("blackout");//
+}
+
+function hideMilky3() {
+    milky_third.classList.add("hidden");
+    //main.classList.remove("blackout");//
+}
+
+milky_button3.addEventListener("click", showMilky3);
+hide_button3.addEventListener("click", hideMilky3);

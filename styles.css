@@ -184,10 +184,12 @@ footer li {
 }
 
 button {
-    font-size: 20px;
+    font-size: 30px;
     border: none;
-    background-color: aliceblue;
+    background-color: var(--honeydew);
     border-radius: 5px;
+    padding: 10px;
+    color: var(--lapis);
 }
 
 button:hover {
@@ -228,4 +230,21 @@ h5 {
 
 strong {
     color: var(--violet);
+}
+
+table {
+   width: 100%; 
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: var(--honeydew);
+   padding: 10px;
+   border-radius: 10px;
+}
+
+th {
+    font-weight: bold;
+    border-bottom: 1px solid var(--lapis);
+}
+
+td, th {
+    padding: 10px;
 }
