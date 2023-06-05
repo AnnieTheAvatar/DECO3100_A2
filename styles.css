@@ -10,7 +10,6 @@
     src: url(fonts/coolvetica\ rg.otf);
 }
 
-
 :root {
     --honeydew: #EDFFEC;
     --lapis: #28587B;
@@ -18,6 +17,7 @@
     --periwinkle: #AFB7ED;
     --jordy: #82B9F5;
 }
+
 
 /*basic layout styling*/
 
@@ -29,7 +29,7 @@ main {
     margin: 400px 50px 20px 50px;
 }
 
-header{
+header {
     background-color: white;
     background-image: linear-gradient(var(--jordy), white);
     padding: 70px;
@@ -46,6 +46,9 @@ footer {
     left: 0px;
     width: 100%;
 }
+
+
+/* This website works best for 1920x1080 screens, but I want to make sure the milk drip still works okay for a smaller screen*/
 
 @media only screen and (max-width: 1779px) {
     .drip {
@@ -117,6 +120,17 @@ aside,
     margin: 10px;
 }
 
+aside p {
+    margin-top: 50px;
+}
+
+.intro p {
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .card {
     padding: 30px 10px;
     border-radius: 20px;
@@ -185,7 +199,7 @@ footer li {
 
 button {
     font-size: 30px;
-    border: none;
+    border: 1px solid var(--periwinkle);
     background-color: var(--honeydew);
     border-radius: 5px;
     padding: 10px;
@@ -207,9 +221,14 @@ a {
     color: rgb(129, 155, 230);
 }
 
-img {
-    width: 90%;
+section img {
+    width: 80%;
     border-radius: 10px;
+}
+
+.section-imgs {
+    height: 500px;
+    object-fit: cover;
 }
 
 h5 {
@@ -233,11 +252,11 @@ strong {
 }
 
 table {
-   width: 100%; 
-   font-family: Arial, Helvetica, sans-serif;
-   background-color: var(--honeydew);
-   padding: 10px;
-   border-radius: 10px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--honeydew);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 th {
@@ -245,6 +264,21 @@ th {
     border-bottom: 1px solid var(--lapis);
 }
 
-td, th {
+td,
+th {
     padding: 10px;
+}
+
+.card p {
+    margin: 30px;
+}
+
+.source {
+    font-size: 15px;
+    vertical-align: top;
+    color: var(--violet);
+}
+
+#fire_gif {
+    width: 400px;
 }

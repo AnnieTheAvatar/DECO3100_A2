@@ -3,7 +3,10 @@
 // create the unpack function from tutorials
 const unpack = (data, key) => data.map(row => row[key]);
 
-const colorway = ['#3fc1c0','#00b2ca','#0899ba','#0f80aa','#1c558e'];
+const colorWat = ['#3fc1c0', '#00b2ca', '#0899ba', '#0f80aa', '#1c558e'];
+const colorLan = ['#936639', '#b6ad90', '#a4ac86', '#656d4a', '#414833'];
+const colorCo2 = ['#495057', '#343a40', '#212529', '#161a1d', '#495057'];
+
 
 //import and read the data
 Plotly.d3.csv("data/environmental-footprint-milks.csv", footprintData => {
@@ -22,7 +25,7 @@ Plotly.d3.csv("data/environmental-footprint-milks.csv", footprintData => {
             order: 'descending'
         }],
         marker: {
-            color: colorway
+            color: colorWat
         }
     }];
 
@@ -46,7 +49,7 @@ Plotly.d3.csv("data/environmental-footprint-milks.csv", footprintData => {
     }
 
     //plot the bar chart with the pop
-    Plotly.newPlot('waterBar', water_data, water_layout);
+    Plotly.newPlot('waterBar', water_data, water_layout, { displayModeBar: false });
 
 
 
@@ -62,7 +65,7 @@ Plotly.d3.csv("data/environmental-footprint-milks.csv", footprintData => {
             order: 'descending'
         }],
         marker: {
-            color: colorway
+            color: colorLan
         }
     }];
 
@@ -86,7 +89,7 @@ Plotly.d3.csv("data/environmental-footprint-milks.csv", footprintData => {
     };
 
     //plot the bar chart with the pop
-    Plotly.newPlot('landBar', land_data, land_layout);
+    Plotly.newPlot('landBar', land_data, land_layout, { displayModeBar: false });
 
     const co2_y = unpack(footprintData, "GHG emissions of milks (kg CO2eq)");
 
@@ -100,7 +103,7 @@ Plotly.d3.csv("data/environmental-footprint-milks.csv", footprintData => {
             order: 'descending'
         }],
         marker: {
-            color: colorway
+            color: colorCo2
         }
     }];
 
@@ -123,7 +126,7 @@ Plotly.d3.csv("data/environmental-footprint-milks.csv", footprintData => {
         plot_bgcolor: 'rgba(0, 0, 0, 0)'
     };
 
-    Plotly.newPlot('co2graph', co2data, co2layout);
+    Plotly.newPlot('co2graph', co2data, co2layout, { displayModeBar: false });
 
 });
 
