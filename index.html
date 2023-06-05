@@ -14,224 +14,222 @@
 
 <body>
     <!-- Header with a drippy effect that looks like milk-->
-    <div id="all">
-        <header>
-            <h1>Is cow's milk the right choice for your child's future?</h1>
-            <img src="/assets/Drip.svg" class="drip">
-        </header>
-        <!-- Main sections include all the content, mostly within cards of grid structures -->
-        <main>
-            <section class="intro">
-                <h2>Why Milk?</h2>
-                <p>Milk is one of the most common food resources. Over 6 billion people consume milk worldwide! <a href="https://www.fao.org/dairy-production-products/products/en/" class="source"><i class="fa-solid fa-circle-info"></i></a></p>
-                <p>The amount of co2 emissons that is produced from one glass of milk (250ml) is equivalent to driving a car for 3.8km.<a href="https://www.co2everything.com/category/drinks" class="source"><i class="fa-solid fa-circle-info"></i></a></p>
-                <p>Milk is one of the main sources of nutrients for growing children, so let's make sure the milk we're feeding the future generations won't continue to polute the Earth.</p>
+    <header>
+        <h1>Is cow's milk the right choice for your child's future?</h1>
+        <img src="/assets/Drip.svg" class="drip">
+    </header>
+    <!-- Main sections include all the content, mostly within cards of grid structures -->
+    <main>
+        <section class="intro">
+            <h2>Why Milk?</h2>
+            <p>Milk is one of the most common food resources. Over 6 billion people consume milk worldwide! <a href="https://www.fao.org/dairy-production-products/products/en/" class="source"><i class="fa-solid fa-circle-info"></i></a></p>
+            <p>The amount of co2 emissons that is produced from one glass of milk (250ml) is equivalent to driving a car for 3.8km.<a href="https://www.co2everything.com/category/drinks" class="source"><i class="fa-solid fa-circle-info"></i></a></p>
+            <p>Milk is one of the main sources of nutrients for growing children, so let's make sure the milk we're feeding the future generations won't continue to polute the Earth.</p>
 
-                <p><button id="milky_first_button"><i class="fa-solid fa-cow"></i></button>
-                    <- click me!</p>
-            </section>
+            <p><button id="milky_first_button"><i class="fa-solid fa-cow"></i></button>
+                <- click me!</p>
+        </section>
 
-            <aside id="milky_first" class="hidden">
-                <section class="left">
-                    <h3>Meet Milky!</h3>
-                    <img src="assets/milky_norm.png" alt="cartoon drawing of a milk carton with a friendly smile">
-                </section>
-                <section class="right">
-                    <button id="hide_btn_1" class="close"><i class="fa-solid fa-circle-xmark"></i></button>
-                    <p>Milky is a passionate milk carton that wants to teach everyone about the impact dairy milk can have on the Environment. Milky is here to guide you through the data below and give you extra resources to help you make educated choices
-                        regarding milk and the environment! When you see a Milky icon
-                        <i class="fa-solid fa-cow"></i> click on it to read what Milky has to say!</p>
-                </section>
-            </aside>
-            <!-- Section 1: Scaring the user into learning about the damages the dairy industry is causing on the planet-->
+        <aside id="milky_first" class="hidden">
+            <section class="left">
+                <h3>Meet Milky!</h3>
+                <img src="assets/milky_norm.png" alt="cartoon drawing of a milk carton with a friendly smile">
             </section>
-            <h2>What's the damage?</h2>
-            <section class="card">
-                <div class="left">
-                    <div id="waterBar" class="graph"></div>
-                </div>
-                <div class="right">
-                    <h3>Water Usage</h3>
-                    <p>Did you know that producing dairy milk requires a lot of water?</p>
-                    <p>Cows, just like us, need water to stay healthy and produce milk. On top of that, the crops that cows eat, like grass and grains, also need water to grow. All this water adds up and can put a strain on our water resources, especially
-                        in areas where water is already scarce. </p>
-                    <p>So, it's important for us to be mindful of how much water goes into producing milk.
-                    </p>
-                </div>
+            <section class="right">
+                <button id="hide_btn_1" class="close"><i class="fa-solid fa-circle-xmark"></i></button>
+                <p>Milky is a passionate milk carton that wants to teach everyone about the impact dairy milk can have on the Environment. Milky is here to guide you through the data below and give you extra resources to help you make educated choices regarding
+                    milk and the environment! When you see a Milky icon
+                    <i class="fa-solid fa-cow"></i> click on it to read what Milky has to say!</p>
             </section>
-            <section class="card">
-                <div class="left">
-                    <h3>Land Usage</h3>
-                    <p>Cows need space to graze and eat grass, and that requires large pastures.</p>
-                    <p>Sometimes, forests and other natural habitats are cleared to make room for these pastures. This can harm the environment by contributing to deforestation and the loss of animal homes. </p>
-                    <p>Additionally, cows also eat crops like corn and wheat, which require land for cultivation. When more land is used for growing cow food, it can lead to more deforestation and the loss of biodiversity.
-                        <button id="milky_second_button"><i class="fa-solid fa-cow"></i></button>
-                    </p>
-                </div>
-                <div class="right">
-                    <div id="landBar"></div>
-                </div>
-            </section>
+        </aside>
+        <!-- Section 1: Scaring the user into learning about the damages the dairy industry is causing on the planet-->
+        </section>
+        <h2>What's the damage?</h2>
+        <section class="card">
+            <div class="left">
+                <div id="waterBar" class="graph"></div>
+            </div>
+            <div class="right">
+                <h3>Water Usage</h3>
+                <p>Did you know that producing dairy milk requires a lot of water?</p>
+                <p>Cows, just like us, need water to stay healthy and produce milk. On top of that, the crops that cows eat, like grass and grains, also need water to grow. All this water adds up and can put a strain on our water resources, especially in
+                    areas where water is already scarce. </p>
+                <p>So, it's important for us to be mindful of how much water goes into producing milk.
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <div class="left">
+                <h3>Land Usage</h3>
+                <p>Cows need space to graze and eat grass, and that requires large pastures.</p>
+                <p>Sometimes, forests and other natural habitats are cleared to make room for these pastures. This can harm the environment by contributing to deforestation and the loss of animal homes. </p>
+                <p>Additionally, cows also eat crops like corn and wheat, which require land for cultivation. When more land is used for growing cow food, it can lead to more deforestation and the loss of biodiversity.
+                    <button id="milky_second_button"><i class="fa-solid fa-cow"></i></button>
+                </p>
+            </div>
+            <div class="right">
+                <div id="landBar"></div>
+            </div>
+        </section>
 
-            <aside class="hidden" id="milky_second">
-                <section class="left">
-                    <h3>Milkys Note:</h3>
-                    <img src="assets/milky_point.png">
-                </section>
-                <section class="right">
-                    <button id="hide_btn_2" class="close"> <i class="fa-solid fa-circle-xmark"></i></button>
-                    <p>As you can see, the way we produce milk has a big impact on our environment. We can also choose milk alternatives, which have a smaller environmental footprint. There are other things we can do to help the environment too!
-                        <a href="https://landcareaustralia.org.au/about/what-you-can-do-at-home-or-work-to-get-involved-in-landcare/">Read about how you can help the land here.</a>
-                    </p>
-                </section>
-            </aside>
+        <aside class="hidden" id="milky_second">
+            <section class="left">
+                <h3>Milkys Note:</h3>
+                <img src="assets/milky_point.png">
+            </section>
+            <section class="right">
+                <button id="hide_btn_2" class="close"> <i class="fa-solid fa-circle-xmark"></i></button>
+                <p>As you can see, the way we produce milk has a big impact on our environment. We can also choose milk alternatives, which have a smaller environmental footprint. There are other things we can do to help the environment too!
+                    <a href="https://landcareaustralia.org.au/about/what-you-can-do-at-home-or-work-to-get-involved-in-landcare/">Read about how you can help the land here.</a>
+                </p>
+            </section>
+        </aside>
 
-            <section class="card">
-                <section class="left">
-                    <div id="co2graph" class="graph"></div>
-                    <h5>Dairy milk is responsible for <strong>14%</strong> of man-made greenhouse gas emissions! <a href="https://www.researchgate.net/publication/348789873_Concentrate_supplementation_on_milk_yield_methane_and_CO2_production_in_crossbred_dairy_cows_grazing_in_tropical_climate_regions"
-                            class="source"><i class="fa-solid fa-circle-info"></i></a></h5>
-                </section>
-                <section class="right">
-                    <h3>CO2 Production</h3>
-                    <p>Cows can produce a gas called methane, which is another greenhouse gas that contributes to global warming.</p>
-                    <p>The transportation of milk from farms to stores requires vehicles that emit CO2. </p>
-                    <p>Additionally, the machines and factories used to process milk also release CO2.</p>
-                    <p>So, overall, the production of dairy milk contributes to the release of CO2 into the environment. If there's too much CO2, our Earth might just look like this! <strong><i
+        <section class="card">
+            <section class="left">
+                <div id="co2graph" class="graph"></div>
+                <h5>Dairy milk is responsible for <strong>14%</strong> of man-made greenhouse gas emissions! <a href="https://www.researchgate.net/publication/348789873_Concentrate_supplementation_on_milk_yield_methane_and_CO2_production_in_crossbred_dairy_cows_grazing_in_tropical_climate_regions"
+                        class="source"><i class="fa-solid fa-circle-info"></i></a></h5>
+            </section>
+            <section class="right">
+                <h3>CO2 Production</h3>
+                <p>Cows can produce a gas called methane, which is another greenhouse gas that contributes to global warming.</p>
+                <p>The transportation of milk from farms to stores requires vehicles that emit CO2. </p>
+                <p>Additionally, the machines and factories used to process milk also release CO2.</p>
+                <p>So, overall, the production of dairy milk contributes to the release of CO2 into the environment. If there's too much CO2, our Earth might just look like this! <strong><i
                                 class="fa-solid fa-arrow-down"></i></strong></p>
 
-                    <img id="fire_gif" src="assets/earth-on-fire.gif" alt="animated gif of the eart on fire">
-                    <!-- IMG SRC: https://www.samtaylorillustrator.com/gifs/1x3tax7s0y6itgnzrugtuqe8ibmztw ARTIST: SAM TAYLOR-->
-                </section>
+                <img id="fire_gif" src="assets/earth-on-fire.gif" alt="animated gif of the eart on fire">
+                <!-- IMG SRC: https://www.samtaylorillustrator.com/gifs/1x3tax7s0y6itgnzrugtuqe8ibmztw ARTIST: SAM TAYLOR-->
             </section>
+        </section>
 
-            <!-- Section 2: Fact checking if other milks will be an affective replacement over cows milk -->
-            <h2>Do alternative milks even work?</h2>
-            <section class="card">
-                <section class="left">
-                    <h3>What Nutrients Do Kids Need?</h3>
-                    <p>We have all been told that kids need to drink dairy milk to be healthy, but do we actually know what nutrients are needed from milk to sustain healthy growth?</p>
-                    <h5>Kids aged 4 - 8 are recommended to have 1.5 - 2 serves of dairy daily!<br> 1 serving = 250ml milk. <a href="https://www.healthdirect.gov.au/dairy-foods" class="source"><i class="fa-solid fa-circle-info"></i></a></h5>
-                    <h5>The main nutrients kids get from milk is <strong>calcium!</strong></h5>
-                </section>
-                <section class="right">
-                    <img class="section-imgs" src="/assets/drinking_milk.jpg" alt="kid with a big smile holding a glass of milk">
-                </section>
+        <!-- Section 2: Fact checking if other milks will be an affective replacement over cows milk -->
+        <h2>Do alternative milks even work?</h2>
+        <section class="card">
+            <section class="left">
+                <h3>What Nutrients Do Kids Need?</h3>
+                <p>We have all been told that kids need to drink dairy milk to be healthy, but do we actually know what nutrients are needed from milk to sustain healthy growth?</p>
+                <h5>Kids aged 4 - 8 are recommended to have 1.5 - 2 serves of dairy daily!<br> 1 serving = 250ml milk. <a href="https://www.healthdirect.gov.au/dairy-foods" class="source"><i class="fa-solid fa-circle-info"></i></a></h5>
+                <h5>The main nutrients kids get from milk is <strong>calcium!</strong></h5>
             </section>
-            <section class="card">
-                <section class="left">
-                    <img src="assets/milk-03.png" alt="diagram of the nutrition in dairy milk">
-                </section>
-                <section class="right">
-                    <img src="assets/milk-02.png" alt="diagram of the nutrition in oat milk">
-                </section>
-                <p>As we can see from the two diagrams, it's possible to get a similar amount of calcium and vitamins from oat milk.</p>
-                <p>There are many other sources of protein for kids, such as nuts, grains and eggs.<a href="https://www.healthychildren.org/English/healthy-living/nutrition/Pages/Beyond-Chicken-Nuggets.aspx" class="source"><i class="fa-solid fa-circle-info"></i></a></p>
+            <section class="right">
+                <img class="section-imgs" src="/assets/drinking_milk.jpg" alt="kid with a big smile holding a glass of milk">
             </section>
-
-            <h2>What's the cost?</h2>
-            <section class="card">
-                <section class="left">
-                    <h3>Cost of Alternative Milk</h3>
-                    <p>The short version: alternative milk is going to cost more financially.</p>
-                    <p>But what is worth more, a few bucks or your child's future?</p>
-                    <p>As we've seen from all of the data above, cow's milk is the most damaging to the environment and is costing even more in the long run! Reducing CO2 emissions is crucial to mitigating the impacts of climate change and preserving the
-                        planet for future generations. <button id="milky_second_third"><i class="fa-solid fa-cow"></i> </button></p>
-
-                </section>
-                <section class="right">
-                    <h3>Cost comparison</h3>
-                    <p>If we do a simple comparisons of the costs surrounding dairy milk and oat milk, it may seem that dairy milk costs more financially but it costs more for the planet and for our children's futures.
-                    </p>
-                    <table>
-                        <tr>
-                            <th>Cost (per L milk)</th>
-                            <th>Cow's Milk</th>
-                            <th>Oat Milk</th>
-                        </tr>
-                        <tr>
-                            <td>Price</td>
-                            <td>$1.60</td>
-                            <td>$2.25</td>
-                        </tr>
-                        <tr>
-                            <td>Water</td>
-                            <td>628L</td>
-                            <td>48L</td>
-                        </tr>
-                        <tr>
-                            <td>Land</td>
-                            <td>9m2</td>
-                            <td>1m2</td>
-                        </tr>
-                        <tr>
-                            <td>Produced co2</td>
-                            <td>3kg</td>
-                            <td>1kg</td>
-                        </tr>
-                    </table>
-                </section>
+        </section>
+        <section class="card">
+            <section class="left">
+                <img src="assets/milk-03.png" alt="diagram of the nutrition in dairy milk">
             </section>
-
-            <aside class="hidden" id="milky_third">
-                <section class="left">
-                    <h3>Milkys Note:</h3>
-                    <img src="assets/milky_point.png">
-                </section>
-                <section class="right">
-                    <button id="hide_btn_3" class="close"> <i class="fa-solid fa-circle-xmark"></i></button>
-                    <p>If you're worried about the financial impact of alternative milk, you can make your own nut milk right at home! Basically soak the nuts or seeds of your choice in water and blend until smooth, you can even strain with a mesh bag for
-                        a milkier texture.<a href="https://frommybowl.com/homemade-nut-milk/">Find the recipe here.</a></p>
-                </section>
-            </aside>
-
-            <!-- Section 3: Final thoughts and what can the user do with this information-->
-            <h2>What's the takeaway?</h2>
-            <section class="card">
-                <section class="left">
-                    <h3>The summary</h3>
-                    <h5>Dairy milk takes up too much land and water to produce and creates tonnes of co2!</h5>
-                    <h5>Alternative milk is better for the environment.</h5>
-                    <h5>Your kids can still get all their nutrition from alternative milks.</h5>
-                </section>
-                <section class="right">
-                    <h3>Where to now?</h3>
-                    <h5>Let's ensure your kid has a safe and thriving future!</h5>
-                    <img class="section-imgs" src="assets/watering_can.jpg" alt="kid watering plants with large metal watering can">
-                </section>
+            <section class="right">
+                <img src="assets/milk-02.png" alt="diagram of the nutrition in oat milk">
             </section>
+            <p>As we can see from the two diagrams, it's possible to get a similar amount of calcium and vitamins from oat milk.</p>
+            <p>There are many other sources of protein for kids, such as nuts, grains and eggs.<a href="https://www.healthychildren.org/English/healthy-living/nutrition/Pages/Beyond-Chicken-Nuggets.aspx" class="source"><i class="fa-solid fa-circle-info"></i></a></p>
+        </section>
 
-            <h2>What alternative milk will you choose?</h2>
-            <p style="width: 100%; text-align: center;">Click on an image below to find out more about each milk type
-            </p>
+        <h2>What's the cost?</h2>
+        <section class="card">
+            <section class="left">
+                <h3>Cost of Alternative Milk</h3>
+                <p>The short version: alternative milk is going to cost more financially.</p>
+                <p>But what is worth more, a few bucks or your child's future?</p>
+                <p>As we've seen from all of the data above, cow's milk is the most damaging to the environment and is costing even more in the long run! Reducing CO2 emissions is crucial to mitigating the impacts of climate change and preserving the planet
+                    for future generations. <button id="milky_second_third"><i class="fa-solid fa-cow"></i> </button></p>
 
-            <section class="milk-type-containers">
-                <section>
-                    <h3>Oat Milk</h3>
-                    <a href="https://www.oatly.com/en-au/stuff-we-make/oat-milk/oat-milk"><img src="assets/oat.png" class="nuts" alt="transparent image of a pile of oats"></a>
-                </section>
-                <section>
-                    <h3>Soy Milk</h3>
-                    <a href="https://soy.com.au/product/soy-milk-original/"><img src="assets/soy.png" class="nuts" alt="transparent image of a pile of soys"></a>
-                </section>
-                <section>
-                    <h3>Almond Milk</h3>
-                    <a href="https://australiasownfoods.com.au/product/almond-milk-original/"><img src="assets/almonds.png" class="nuts" alt="transparent image of a pile of almonds"></a>
-                </section>
             </section>
-        </main>
-        <footer class="references">
-            <h4>Sources</h3>
-                <ul>
-                    <li><a href="https://ourworldindata.org/environmental-impact-milks">Milk environmental Impacts - Our World In Data</a></li>
-                    <li><a href="https://www.woolworths.com.au/shop/productdetails/150166/macro-organic-oat-milk-unsweetened">Milk Cost Comparisons (Oat Milk) - Woolworths</a></li>
-                    <li><a href="https://www.woolworths.com.au/shop/productdetails/50923/woolworths-full-cream-milk">Milk Cost Comparisons (Dairy Milk) - Woolworths</a></li>
-                    <li><a href="https://www.devondale.com.au/en/products/milk/full-cream-fresh-milk">Dairy Milk Nutrition - Devondale</a></li>
-                    <li><a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/173441/nutrients">Dairy Milk Nutrition - USDA</a></li>
-                    <li><a href="https://www.oatly.com/en-au/stuff-we-make/oat-milk/oat-milk">Oat Milk Nutrition - Oatly</a></li>
-                </ul>
-        </footer>
-    </div>
+            <section class="right">
+                <h3>Cost comparison</h3>
+                <p>If we do a simple comparisons of the costs surrounding dairy milk and oat milk, it may seem that dairy milk costs more financially but it costs more for the planet and for our children's futures.
+                </p>
+                <table>
+                    <tr>
+                        <th>Cost (per L milk)</th>
+                        <th>Cow's Milk</th>
+                        <th>Oat Milk</th>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>$1.60</td>
+                        <td>$2.25</td>
+                    </tr>
+                    <tr>
+                        <td>Water</td>
+                        <td>628L</td>
+                        <td>48L</td>
+                    </tr>
+                    <tr>
+                        <td>Land</td>
+                        <td>9m2</td>
+                        <td>1m2</td>
+                    </tr>
+                    <tr>
+                        <td>Produced co2</td>
+                        <td>3kg</td>
+                        <td>1kg</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+
+        <aside class="hidden" id="milky_third">
+            <section class="left">
+                <h3>Milkys Note:</h3>
+                <img src="assets/milky_point.png">
+            </section>
+            <section class="right">
+                <button id="hide_btn_3" class="close"> <i class="fa-solid fa-circle-xmark"></i></button>
+                <p>If you're worried about the financial impact of alternative milk, you can make your own nut milk right at home! Basically soak the nuts or seeds of your choice in water and blend until smooth, you can even strain with a mesh bag for a
+                    milkier texture.<a href="https://frommybowl.com/homemade-nut-milk/">Find the recipe here.</a></p>
+            </section>
+        </aside>
+
+        <!-- Section 3: Final thoughts and what can the user do with this information-->
+        <h2>What's the takeaway?</h2>
+        <section class="card">
+            <section class="left">
+                <h3>The summary</h3>
+                <h5>Dairy milk takes up too much land and water to produce and creates tonnes of co2!</h5>
+                <h5>Alternative milk is better for the environment.</h5>
+                <h5>Your kids can still get all their nutrition from alternative milks.</h5>
+            </section>
+            <section class="right">
+                <h3>Where to now?</h3>
+                <h5>Let's ensure your kid has a safe and thriving future!</h5>
+                <img class="section-imgs" src="assets/watering_can.jpg" alt="kid watering plants with large metal watering can">
+            </section>
+        </section>
+
+        <h2>What alternative milk will you choose?</h2>
+        <p style="width: 100%; text-align: center;">Click on an image below to find out more about each milk type
+        </p>
+
+        <section class="milk-type-containers">
+            <section>
+                <h3>Oat Milk</h3>
+                <a href="https://www.oatly.com/en-au/stuff-we-make/oat-milk/oat-milk"><img src="assets/oat.png" class="nuts" alt="transparent image of a pile of oats"></a>
+            </section>
+            <section>
+                <h3>Soy Milk</h3>
+                <a href="https://soy.com.au/product/soy-milk-original/"><img src="assets/soy.png" class="nuts" alt="transparent image of a pile of soys"></a>
+            </section>
+            <section>
+                <h3>Almond Milk</h3>
+                <a href="https://australiasownfoods.com.au/product/almond-milk-original/"><img src="assets/almonds.png" class="nuts" alt="transparent image of a pile of almonds"></a>
+            </section>
+        </section>
+    </main>
+    <footer class="references">
+        <h4>Sources</h3>
+            <ul>
+                <li><a href="https://ourworldindata.org/environmental-impact-milks">Milk environmental Impacts - Our World In Data</a></li>
+                <li><a href="https://www.woolworths.com.au/shop/productdetails/150166/macro-organic-oat-milk-unsweetened">Milk Cost Comparisons (Oat Milk) - Woolworths</a></li>
+                <li><a href="https://www.woolworths.com.au/shop/productdetails/50923/woolworths-full-cream-milk">Milk Cost Comparisons (Dairy Milk) - Woolworths</a></li>
+                <li><a href="https://www.devondale.com.au/en/products/milk/full-cream-fresh-milk">Dairy Milk Nutrition - Devondale</a></li>
+                <li><a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/173441/nutrients">Dairy Milk Nutrition - USDA</a></li>
+                <li><a href="https://www.oatly.com/en-au/stuff-we-make/oat-milk/oat-milk">Oat Milk Nutrition - Oatly</a></li>
+            </ul>
+    </footer>
     <script src="script.js"></script>
 </body>
 
